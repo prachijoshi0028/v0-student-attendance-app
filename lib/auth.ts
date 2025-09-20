@@ -30,7 +30,7 @@ export interface Staff extends User {
 export const mockStudents: Student[] = [
   {
     id: "1",
-    name: "Alex Johnson",
+    name: "Prachi Joshi",
     studentId: "ST001",
     role: "student",
     class: "10A",

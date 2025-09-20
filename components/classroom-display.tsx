@@ -42,7 +42,7 @@ export function ClassroomDisplay() {
   const attendancePercentage = Math.round((attendanceCount / classInfo.totalStudents) * 100)
 
   const recentAttendance = [
-    { name: "Alex Johnson", time: "12:01", method: "QR Code", status: "present" },
+    { name: "Prachi Joshi", time: "12:01", method: "QR Code", status: "present" },
     { name: "Sarah Chen", time: "12:02", method: "Face Recognition", status: "present" },
     { name: "Emma Davis", time: "12:03", method: "Proximity", status: "present" },
     { name: "James Brown", time: "12:15", method: "QR Code", status: "late" },

@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge"
 import { Progress } from "@/components/ui/progress"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Chatbox } from "@/components/chatbox"
 import {
   Calendar,
   Clock,
@@ -21,6 +22,7 @@ import {
   LogOut,
   CheckCircle,
   CalendarDays,
+  Trophy,
 } from "lucide-react"
 import { getCurrentUser, type Student } from "@/lib/auth"
 
@@ -192,6 +194,21 @@ export function StudentDashboard() {
               <p className="text-xs text-muted-foreground">AI-generated schedule</p>
             </CardContent>
           </Card>
+
+          {/* Extra-Curricular Activities */}
+          <Card>
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">Activities</CardTitle>
+              <Trophy className="h-4 w-4 text-muted-foreground" />
+            </CardHeader>
+            <CardContent className="space-y-2">
+              <Button className="w-full" size="sm" onClick={() => (window.location.href = "/student/activities")}>
+                <Trophy className="h-4 w-4 mr-2" />
+                View Activities
+              </Button>
+              <p className="text-xs text-muted-foreground">Track your achievements</p>
+            </CardContent>
+          </Card>
         </div>
 
         {/* Main Content Tabs */}
@@ -335,6 +352,9 @@ export function StudentDashboard() {
           </TabsContent>
         </Tabs>
       </div>
+
+      {/* Floating Chatbox */}
+      <Chatbox />
     </div>
   )
 }

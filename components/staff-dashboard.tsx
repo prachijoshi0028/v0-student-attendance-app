@@ -62,7 +62,7 @@ export function StaffDashboard() {
   ]
 
   const studentList = [
-    { id: "ST001", name: "Alex Johnson", class: "10A", status: "present", time: "08:55", method: "QR Code" },
+    { id: "ST001", name: "Prachi Joshi", class: "10A", status: "present", time: "08:55", method: "QR Code" },
     { id: "ST002", name: "Sarah Chen", class: "10A", status: "present", time: "08:58", method: "Face Recognition" },
     { id: "ST003", name: "Mike Wilson", class: "10A", status: "absent", time: "-", method: "-" },
     { id: "ST004", name: "Emma Davis", class: "10A", status: "present", time: "09:02", method: "Proximity" },
